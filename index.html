@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="titulo-futurista">Lista de Tareas</h1>
+      <div class="input-container">
+        <input type="text" id="nuevaTarea" class="input-futurista" placeholder="Nueva tarea">
+        <button class="boton-futurista" onclick="agregarTarea()">Agregar Tarea</button>
+      </div>
+      <ul id="listaTareas"></ul>
+    </div>
+  
+    <!-- Modal -->
+    <div id="modalAlert" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="cerrarModal()">&times;</span>
+        <p id="modalMensaje"></p>
+      </div>
+    </div>
+  </body>
+</html>

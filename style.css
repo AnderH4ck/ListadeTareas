@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #111;
+  font-family: "Arial", sans-serif;
+  color: white;
+  margin: 0;
+}
+.container {
+  text-align: center;
+}
+
+#listaTareas {
+  list-style: none;
+  padding: 0;
+  max-width: 510px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow: hidden;
+}
+
+#listaTareas li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 255, 0.4),
+    rgba(255, 0, 255, 0.4),
+    rgba(0, 255, 255, 0.4),
+    rgba(255, 255, 0, 0.4)
+  );
+  background-size: 300% 300%;
+  margin: 10px 0;
+  padding: 10px;
+  font-weight: 800;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  animation: gradientShift 3s ease infinite;
+  position: relative;
+}
+
+.boton-futurista {
+  background: linear-gradient(45deg, #00f, #f0f, #0ff, #ff0);
+  background-size: 300% 300%;
+  border: none;
+  margin-left: 20px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  cursor: pointer;
+  border-radius: 30px;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); */
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+  animation: gradientShift 3s ease infinite;
+  font-weight: 800;
+}
+
+.boton-futurista:hover {
+  background-position: right center;
+  /* box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); */
+  transform: scale(1.05);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.input-futurista {
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 255, 0.4),
+    rgba(255, 0, 255, 0.4),
+    rgba(0, 255, 255, 0.4),
+    rgba(255, 255, 0, 0.4)
+  );
+  background-size: 300% 300%;
+  border: none;
+  color: white;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 800;
+  font-family: "Arial", sans-serif;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  outline: none;
+  transition: all 0.4s ease-in-out;
+  animation: gradientShift 3s ease infinite;
+  width: 300px;
+}
+
+.input-futurista::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.7;
+  font-weight: 800;
+}
+
+.input-futurista:focus {
+  background-position: right center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: linear-gradient(45deg, rgba(0, 0, 255, 0.7), rgba(255, 0, 255, 0.7), rgba(0, 255, 255, 0.7), rgba(255, 255, 0, 0.7));
+  background-size: 300% 300%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: gradientShift 3s ease infinite;
+  color: white;
+  font-weight: 800;
+  max-width: 400px;
+  text-align: center;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
