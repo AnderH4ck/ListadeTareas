@@ -192,7 +192,6 @@ body {
 
   .boton-futurista {
     max-width: 100%;
-    margin-top: 10px; /* Espaciado entre el botón y las tareas en dispositivos móviles */
   }
 
   .lista-tareas {
