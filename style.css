@@ -37,7 +37,8 @@ body {
   background-size: 300% 300%;
   border: none;
   color: white;
-  margin-right: 10px;
+  margin-left: 10px;
+  /* margin-right: 10px; */
   padding: 15px;
   font-size: 16px;
   font-weight: 800;
@@ -48,7 +49,7 @@ body {
   transition: all 0.4s ease-in-out;
   animation: gradientShift 3s ease infinite;
   flex: 1;
-  max-width: 300px;
+  /* max-width: 300px; */
 }
 
 .input-futurista::placeholder {
@@ -71,6 +72,7 @@ body {
   transition: all 0.4s ease-in-out;
   animation: gradientShift 3s ease infinite;
   font-weight: 800;
+  margin-left: 10px; /* Espacio entre el botón y el texto de la tarea */
 }
 
 .boton-futurista:hover {
@@ -108,6 +110,12 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   animation: gradientShift 3s ease infinite;
   position: relative;
+  word-break: break-word; /* Permite romper palabras largas */
+  max-width: 100%; /* Limita el ancho máximo del elemento */
+}
+
+.lista-tareas li span {
+  flex: 1; /* Ocupa todo el espacio posible para el texto */
 }
 
 .modal {
@@ -173,5 +181,17 @@ body {
   .input-futurista {
     margin-bottom: 10px;
     max-width: 100%;
+  }
+  
+  .boton-futurista {
+    max-width: 100%;
+    margin-top: 10px; /* Espaciado entre el botón y las tareas en dispositivos móviles */
+  }
+  
+  .lista-tareas {
+    font-size: 14px; /* Reducir el tamaño de fuente de las tareas en dispositivos móviles */
+    max-height: calc(100vh - 320px); /* Altura máxima de la lista de tareas en dispositivos móviles */
+    overflow-y: auto; /* Añadir scroll vertical si las tareas exceden la altura máxima */
+    margin-bottom: 20px; /* Espaciado inferior para separar de la lista de tareas */
   }
 }
